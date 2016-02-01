@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#F4BDBF"
+    android:gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        >
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_height="wrap_content"
+            android:layout_width="500dp"
+            android:singleLine="true"
+            android:hint="@string/input_name"
+            />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_height="wrap_content"
+            android:layout_width="500dp"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:hint="@string/input_phone"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_input"
+        android:layout_marginBottom="10dp"
+        android:text="@string/button_add"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_add"
+        >
+
+        <EditText
+            android:id="@+id/et_read"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:singleLine="true"
+            android:hint="@string/input_name"
+            />
+
+        <Button
+            android:id="@+id/button_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_read"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_read"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Polly 電話簿</string>
+    <string name="input_name">輸入姓名</string>
+    <string name="input_phone">輸入電話</string>
+    <string name="button_add">新增</string>
+    <string name="button_read">查詢</string>
+    <string name="button_clear">清除</string>
+    <string name="add_success">新增成功</string>
+    <string name="result_empty">查無資料</string>
+</resources>
